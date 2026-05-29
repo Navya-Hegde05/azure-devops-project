@@ -13,7 +13,7 @@ steps:
 # 1. Build + Push Docker Image to ACR
 - task: Docker@2
   inputs:
-    containerRegistry: 'acr-service-connection'
+    containerRegistry: 'acr-service-connection-2'
     repository: 'votingapp'
     command: 'buildAndPush'
     Dockerfile: 'app/Dockerfile'
